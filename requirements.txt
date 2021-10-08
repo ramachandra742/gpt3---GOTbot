@@ -13,7 +13,6 @@ fasteners==0.14.1
 Flask==2.0.2
 future==0.18.2
 gunicorn==20.1.0
-gobject-introspection == 1.46.0
 httplib2==0.14.0
 idna==2.8
 itsdangerous==2.0.1
