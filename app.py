@@ -5,7 +5,7 @@ from gotbot import ask, append_interaction_to_chat_log
 app = Flask(__name__)
 
 # if for some reasons the conversion got weird, change the secret key
-app.config['SECRET_KEY'] = 'password!'
+app.config['SECRET_KEY'] = 'password123'
 
 @app.route('/gotbot', methods=['POST'])
 def got():
