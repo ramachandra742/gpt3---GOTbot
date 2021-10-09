@@ -16,12 +16,12 @@ session_prompt = "I am a highly intelligent question answering GOTbot. I can ans
 def ask(question, chat_log=None):
   prompt_text = f'{chat_log}{restart_sequence}:{question}{start_sequence}:'
   response = openai.Completion.create(
-    engine="ada",
+    engine="davinci",
     prompt = prompt_text,
     temperature=0.9,
     max_tokens=80,
     top_p=1,
-    frequency_penalty=0.05,
+    frequency_penalty=0,
     presence_penalty=0.6,
     stop=["\n"]
   )
