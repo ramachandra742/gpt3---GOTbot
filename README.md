@@ -14,3 +14,4 @@ Tech Stack :
 
 GOT (Game of Thrones) bot conversion example:
 
+![](gotbot.png)
