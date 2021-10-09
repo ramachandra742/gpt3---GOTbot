@@ -19,11 +19,11 @@ def ask(question, chat_log=None):
   response = openai.Completion.create(
     engine="davinci",
     prompt = prompt_text,
-    temperature=0.5,
+    temperature=0.9,
     max_tokens=80,
     top_p=1,
     frequency_penalty=0,
-    presence_penalty=0.3,
+    presence_penalty=0.6,
     stop=["\n"]
   )
   story = response['choices'][0]['text']
